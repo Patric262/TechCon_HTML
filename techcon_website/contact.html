@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact TechCon 2024 - Get in touch with us for inquiries, view our location on the map, and follow us on social media.">
+    <title>Contact Us - TechCon 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <p>For any inquiries, please reach out to us via email or follow us on social media:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:info@techcon2024.com">info@techcon2024.com</a>
+            </p>
+            <p>
+                <strong>Follow Us:</strong>
+                <a href="https://twitter.com/techcon2024" target="_blank">Twitter</a> |
+                <a href="https://facebook.com/techcon2024" target="_blank">Facebook</a> |
+                <a href="https://linkedin.com/company/techcon2024" target="_blank">LinkedIn</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Conference Venue</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.4840306010985!2d-122.4064174846819!3d37.78583457975821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808e2f9c9e2b%3A0x8cce1f0d6d5280e!2sTechCon%20Conference%20Center!5e0!3m2!1sen!2sus!4v1634580739384!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section>
+            <h2>Contact Us Form</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="year"></span> TechCon 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Automatically update the year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
